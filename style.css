@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #0d1117;
+    color: #b1bac4;
+}
+
+
+/* Levi del - Predstavitvena stran */
+.levo {
+    flex: 1;
+    
+    /*background: url(slika.png), center, bottom, no-repeat;*/
+    background: radial-gradient(ellipse 120% 60% at 50% 110%, #b561f9 0%, #b561f9 5%, #060913 70%, #060913 100%);
+   
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.levo-vsebina {
+    max-width: 480px;
+    z-index: 2;
+    position:absolute;
+    top:10%;
+}
+
+#slika{
+    
+    position:absolute;
+    bottom: 0;
+   
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+h4{
+    color: #ffffff;
+}
+
+
+.podnaslov {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #8b949e;
+}
+
+.funkcije-seznam {
+    list-style: none;
+}
+
+.funkcija-item {
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.funkcija-item::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #3fb950;
+    font-weight: bold;
+}
+
+.funkcija-naslov {
+    color: #f0f6fc;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.funkcija-opis {
+    font-size: 13px;
+    color: #8b949e;
+    line-height: 1.5;
+}
+
+/* Desni del - Obrazec za registracijo */
+.desno {
+    flex: 1;
+    background-color: #ffffff;
+    color: #24292f;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.obrazec-kontejner {
+    width: 100%;
+    max-width: 440px;
+}
+
+.prijava-povezava {
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 440px;
+    color: #57606a;
+}
+
+.prijava-povezava a {
+    color: #0969da;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.gumb-gostitelj {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.gumb-gostitelj a{
+    text-decoration: none;
+}
+
+
+.socialni-gumb {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.locilnik {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 12px;
+    color: #57606a;
+    position: relative;
+}
+
+.vnosna-skupina {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f6f8fa;
+}
+
+.navodilo-tekst {
+    font-size: 12px;
+    color: #57606a;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.kljukica-skupina {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 20px 0;
+    font-size: 13px;
+    color: #24292f;
+}
+
+.kljukica-skupina input {
+    margin-top: 3px;
+}
+
+.glavni-gumb {
+    width: 100%;
+    padding: 12px;
+    background-color: #1f883d;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.pogoji-tekst {
+    font-size: 12px;
+    color: #57606a;
+    line-height: 1.4;
+}
+
+.pogoji-tekst a {
+    color: #0969da;
+    text-decoration: none;
+}
